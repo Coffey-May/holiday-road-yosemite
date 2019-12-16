@@ -1,0 +1,14 @@
+.itineraryPreview {
+    border:1px solid black;
+}
+
+.itineraryContainer{
+    border:1px solid black;
+}
+
+
+.itineraryPreview{
+    display:flex;
+    flex-direction: row;
+    
+}
