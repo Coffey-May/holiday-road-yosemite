@@ -8,3 +8,6 @@ obj
 *.sqlite3
 .vscode
 dist
+Settings.js
+
+
