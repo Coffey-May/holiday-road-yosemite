@@ -4,16 +4,16 @@ import EateryComponent from "./EateriesComponent.js"
 const eventHub = document.querySelector(".container")
 
 const EateryList = () => {
-    const contentTarget = document.querySelector(".eateryContainer")
+    const contentTarget = document.querySelector(".selectedEatery")
 
     const appEateries = useEateries()
 
-    eventHub.addEventListener('eaterySelected', event => {
-        const eateryName = event.detail.parkName  
+    eventHub.addEventListener('eaterySelect', event => {
+        const eateryName = event.detail.eatery  
 
         const filteredEateries =appEateries.filter(
             (individualEatery) => {
-                if(individualEatery.name === eateryName){
+                if(individualEatery.businessName === eateryName){
                     return individualEatery
                 }
             }
@@ -30,7 +30,7 @@ const EateryList = () => {
             )
         }`
     }
-    render(appEateries)
+    // render(appEateries)
 }
  
 export default EateryList
