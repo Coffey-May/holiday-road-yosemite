@@ -1,8 +1,9 @@
 // IMPORTS FROM OUR DIFFERENT MODULES
 import { getParks } from "./parks/ParkProvider.js";
 import parkSelect from "./parks/ParkSelect.js";
-import { getEateries } from "./eateries/EateryProvider.js"
+import { getEateries } from "./eateries/EateryProvider.js";
 import eaterySelect from "./eateries/EateriesSelect.js";
+import ParkList from "./parks/ParkList.js";
 
 
 
@@ -17,4 +18,6 @@ getEateries()
 
 getParks().then(
     () => parkSelect()
+    ).then(
+     () => ParkList()
     )
