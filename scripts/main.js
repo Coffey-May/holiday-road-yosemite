@@ -6,6 +6,7 @@ import eaterySelect from "./eateries/EateriesSelect.js";
 import { getAttractions } from "./attractions/AttractionProvider.js";
 import attractionSelect from "./attractions/AttractionSelect.js";
 import EateryList from "./eateries/EateriesList.js"
+import attractionList from "./attractions/AttractionList.js";
 
 
           
@@ -17,6 +18,8 @@ import EateryList from "./eateries/EateriesList.js"
 getAttractions ()
 .then(
     () => attractionSelect()
+).then(
+    ()=> attractionList()
 )
 
 

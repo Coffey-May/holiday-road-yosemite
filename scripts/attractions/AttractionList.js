@@ -1,48 +1,36 @@
+import { useAttractions } from "./AttractionProvider.js"
 import attractionComponent from "./AttractionComponent.js"
-import  {useAttractions} from "./AttractionProvider.js"
 
 const eventHub = document.querySelector(".container")
 
-const attractionlistComponent = () => {
-    console.log("attractioncomponent")
-    const contentElement = document.querySelector(".attractionContainer")
-    const attractions = useAttraction()
+const attractionList = () => {
+    const contentTarget = document.querySelector(".selectedAttraction")
 
+    const appAttraction = useAttractions()
 
-    eventHub.addEventListener("attractionSelected", event => {
-        const attractionName = event.detail.attraction
-        // detaile.Attraction is basically  a string here
-        const attractionsFilter = attractions.filter(
-            (indivisualattraction) => {
-                if (indivisualattraction.conviction === attractionName) {
-                    return indivisualattraction
+    eventHub.addEventListener('attractionSelected', event => {
+        const attractionName = event.detail.attraction  
+
+        const filteredAttraction = appAttraction.filter(
+            (individualAttraction) => {
+                if(individualAttraction.name === attractionName){
+                    return individualAttraction
                 }
-
             }
         )
-      
-
-
+        render (filteredAttraction)
     })
-
-
-
-    // function that handle render of the html represtations
-    let render = attractions => {
-        contentElement.innerHTML = `
-      ${
-            attractions.map(
-                (attraction) => {
-                    return attractionComponent(attraction)
-
+    const render = (attractionCollection) => {
+        contentTarget.innerHTML =`
+        ${
+            attractionCollection.map(
+                (currentAttraction) => {
+                    return attractionComponent(currentAttraction)
                 }
-            ).join("")
-            }
-  
-    `
-
-
+            )
+        }`
     }
-    render(attraction)
+    // render(appAttraction)
 }
-export default attractionlistComponent
+ 
+export default attractionList

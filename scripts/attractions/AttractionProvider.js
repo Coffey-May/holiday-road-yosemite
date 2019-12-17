@@ -11,10 +11,10 @@ export const getAttractions = () => {
   .then(response => response.json()
   )
   .then(
-      parsedAttraction => {
-          console.log("data about attraction")
+      parsedAttractions => {
+          
       
-          attractions = parsedAttraction.slice()
+          attractions = parsedAttractions.slice()
       }
   )
 }
