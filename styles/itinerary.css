@@ -1,14 +1,29 @@
+h3{
+    color: rgb(255, 255, 255);
+}
+
 .itineraryPreview {
     border:1px solid black;
 }
 
 .itineraryContainer{
     border:1px solid black;
+    width:70vw;
+    height:80vh;
+}
+.selectedItinerary{
+    border:1px solid black;
+    height:37vh;
 }
 
 
 .itineraryPreview{
     display:flex;
     flex-direction: row;
-    
+    justify-content: space-evenly;
 }
+
+.savedItinerariesContainer{
+    width:30vw;
+}
+
