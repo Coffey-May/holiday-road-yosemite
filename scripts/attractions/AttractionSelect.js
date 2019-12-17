@@ -1,55 +1,43 @@
-import { useAttractions } from "./AttractionProvider.js"
+// IMPORT THE PARSED API DATA FROM THE DATA PROVIDER
+import { useAttractions } from './AttractionProvider.js'
 
-// Get a reference to the DOM element where the <select> will be rendered
-const eventHub = document.querySelector(".container")
-
-const contentTarget = document.querySelector(".filters__attraction")
+const eventHub = document.querySelector('.container')
+const contentTarget = document.querySelector('.attractionsFilter')
 
 
 const attractionSelect = () => {
-    // Get all convictions from application state
+    const attractions = useAttractions()
 
-
-    const convictions = useAttractions()
-
-//what should this component say to event hub and when
-    eventHub.addEventListener("change", changeEvent => {
-        if (changeEvent.target.id === "attractionSelect") {
-            //make a custom event to talk to other componenet
-            const selectedattraction = changeEvent.target.value
-
-            const attractionNameMessage = new CustomEvent("attractionSelected", {
+    eventHub.addEventListener('change', changeEvent => {
+        if (changeEvent.target.id === 'attractionSelect') {
+            const selectedAttraction = changeEvent.target.value
+            const attractionNewMessage = new CustomEvent('attractionSelected', {
                 detail: {
-                    attraction: selectedattraction
+                    attraction: selectedAttraction
                 }
             })
-            //dispatch it
-            eventHub.dispatchEvent(attractionNameMessage)
+            eventHub.dispatchEvent(attractionNewMessage)
         }
     })
 
-
-
-    const render = attractionCollection => {
-        /*
-            Use interpolation here to invoke the map() method on
-            the convictionsCollection to generate the option elements.
-            Look back at the example provided above.
-        */
-        contentTarget.innerHTML += `
-            <select class="dropdown" id="attractionSelect">
-                <option value="0">Select Attraction...</option>
-                ${
-            attractionCollection.sort().map(conviction =>
-                `<option class = "crime">${conviction}</option>`
+const render = (attractionCollection) => {
+    contentTarget.innerHTML =`
+   
+    <h4>Attraction</h4>
+    <select name="" id="" class="selectAttraction">Attractions
+        <option value="0">Select Attraction</option>
+        ${
+            attractions.map(attraction =>
+            `<option value=${attraction.name.split(" ").join("_")}> ${attraction.name}</option>`
             )
             }
-                    </select>   
-        `
-    
-
-    }
-    render(convictions)
+            </select>
+        
+    `
 }
-export default ConvictionSelect
 
+render(attractions)
+
+}
+
+export default attractionSelect
