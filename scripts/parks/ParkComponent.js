@@ -1,5 +1,5 @@
 const ParkComponent = (park) => {
-    let parkName = park.split(" ").join("-")
+    let parkName = park.name.split(" ").join("-")
 
     return `
         <section class="selectedParkCard">

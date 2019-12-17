@@ -4,12 +4,12 @@ import ParkComponent from "./ParkComponent.js"
 const eventHub = document.querySelector(".container")
 
 const ParkList = () => {
-    const contentTarget = document.querySelector(".itineraryContainer")
+    const contentTarget = document.querySelector(".selectedItinerary")
 
     const appStateParks = useParks()
 
     eventHub.addEventListener('parkSelected', event => {
-        const parkName = event.detail.parkName
+        const parkName = event.detail.park
 
         const filteredParks = appStateParks.filter(
             (individualPark) => {
@@ -34,7 +34,7 @@ const ParkList = () => {
         
         `
     }
-    render(appStateParks)
+
 }
 
 export default ParkList
