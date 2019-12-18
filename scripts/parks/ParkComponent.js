@@ -1,5 +1,5 @@
 const ParkComponent = (park) => {
-    let parkName = park.name.split(" ").join("-")
+    // let parkName = park.name.split(" ").join("-")
 
     return `
         <section class="selectedParkCard">
@@ -14,8 +14,10 @@ const ParkComponent = (park) => {
             <button class="parkDialogButton" id="park--${park.parkCode}">Additional Park Details</button>
             <dialog class="dialog--button" id="details--${park.parkCode}">
                 <div>More Details</div>
-                        <div>Description:</div>
-                        <div>Events:</div>
+                        <div>Description: ${park.description}</div>
+                        <div>Direction: ${park.directions}</div>
+                        <div>Additional Images:</div>
+                        <img src="${park.images.map(image => {return image.url}).join(" ")}" alt="picture of ${park.name}">
                 <button class="button--close">Close Details</button>
             </dialog>
         </div>
