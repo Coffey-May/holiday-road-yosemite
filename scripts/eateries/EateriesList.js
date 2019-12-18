@@ -1,5 +1,6 @@
 import { useEateries } from "./EateryProvider.js"
 import EateryComponent from "./EateriesComponent.js"
+import initializeEateryDetailButtonEvents from "./eateriesDialogs.js"
 
 const eventHub = document.querySelector(".container")
 
@@ -29,6 +30,11 @@ const EateryList = () => {
                 }
             )
         }`
+
+        initializeEateryDetailButtonEvents()
+
+
+
     }
     // render(appEateries)
 }
