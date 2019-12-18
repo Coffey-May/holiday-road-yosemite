@@ -15,7 +15,7 @@ h1{
     border:1px solid black;
     text-align: center;
     background-color: rgb(5, 0, 12, 0.5); 
-    background-image:url('https://img.pixers.pics/pho_wat(s3:700/FO/19/32/50/47/3/700_FO193250473_b6ed619572d9213555c874333e4396ae,700,224,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,174,jpg)/wall-murals-panorama-yosemite-national-park-im-gegenlicht.jpg.jpg');
+    /* background-image:url('https://img.pixers.pics/pho_wat(s3:700/FO/19/32/50/47/3/700_FO193250473_b6ed619572d9213555c874333e4396ae,700,224,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,174,jpg)/wall-murals-panorama-yosemite-national-park-im-gegenlicht.jpg.jpg'); */
     background-size: 100vw; 
     color: rgb(254, 247, 223);
     letter-spacing: 2rem;
