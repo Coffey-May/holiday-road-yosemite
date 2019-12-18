@@ -36,6 +36,16 @@ export const WeatherFilter = () => {
         let dateConverted2 = new Date(joinedDate).toLocaleDateString('en-US',{timeZone: 'UTC'})
         let dayMonth = dateConverted2.split("/").slice(0, 2).join("/")
      
+        let splitDate = date.split(" ")[0]
+        let splitDateSplit = splitDate.split("-")
+        const splitDateDay = splitDateSplit[2]
+        let dayAdded = parseInt(splitDateDay, 10) + i
+        splitDateSplit[2] = dayAdded.toString()
+        let joinedDate = splitDateSplit.join("-")
+        let dateConverted = new Date(joinedDate)
+        let dayOfTheWeek = dateConverted.getDay()
+        let dateConverted2 = new Date(joinedDate).toLocaleDateString('en-US',{timeZone: 'UTC'})
+        let dayMonth = dateConverted2.split("/").slice(0, 2).join("/")
         let matchingForecasts = appStateWeather.filter(currentForecast => 
         currentForecast.dt_txt.split(" ")[0] === joinedDate)
         let day_temp_mins = []
@@ -47,7 +57,7 @@ export const WeatherFilter = () => {
             // console.log(day_temp_mins)
          
             day_temp_maxs.push(forecast.main.temp_max)
-            // console.log("day_temp_maxs")
+       
             // console.log(day_temp_maxs)
             
             day_condiitons.push(forecast.weather[0].main)
@@ -62,6 +72,18 @@ export const WeatherFilter = () => {
         
         forecastDays[`date${i}`] = {dayMonth}
        
+
+            day_temp_maxs.push(forecast.main.temp_max)
+
+            day_condiitons.push(forecast.weather[0].main)
+
+        }
+        
+        console.log(day_condiitons)
+        day_temp_mins.sort((a, b) => (a - b))
+
+        day_temp_maxs.sort((a, b) => (b - a))
+        forecastDays[`date${i}`] = {dayMonth}
         if (dayOfTheWeek === 0) {
             forecastDays[`date${i}`].day = "Sunday"
         }
@@ -93,5 +115,8 @@ export const WeatherFilter = () => {
      
         console.log(forecastDays)
      
+        forecastDays[`date${i}`].low = day_temp_mins.slice(0, 1).join("")
+        forecastDays[`date${i}`].high = day_temp_maxs.slice(0,1).join("")
+        console.log(forecastDays)
     }
 }
