@@ -11,7 +11,7 @@ h3{
     flex-direction: row;
     border:1px solid black;
     width:70vw;
-    height:80vh;
+    height:60vh;
    
 }
 .selectedItinerary{
@@ -33,7 +33,6 @@ h3{
 .selectedPark, .selectedAttraction, .selectedEatery{
     width:33vw;
 }
-
 
 
 
