@@ -3,6 +3,8 @@ const WeatherComponent = (forecast) => {
     return `
         <section class="weather_component">
             <h3 class="weather__date">
+                ${forecast.day}
+                <br>
                 ${forecast.dayMonth}
             </h3>
             <div class="weather__data">

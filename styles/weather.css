@@ -16,6 +16,10 @@
     flex-direction: column;
 }
 
+.weather__date {
+    text-align: center;
+}
+
 .weather__data_low {
     text-align: center;
 }
