@@ -12,6 +12,7 @@ h3{
     border:1px solid black;
     width:70vw;
     height:80vh;
+   
 }
 .selectedItinerary{
     border:1px solid black;
@@ -28,6 +29,11 @@ h3{
 .savedItinerariesContainer{
     width:30vw;
 }
+
+.selectedPark, .selectedAttraction, .selectedEatery{
+    width:33vw;
+}
+
 
 
 
