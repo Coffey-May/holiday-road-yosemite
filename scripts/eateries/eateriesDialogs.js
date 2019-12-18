@@ -16,7 +16,7 @@ const initializeEateryDetailButtonEvents = () => {
         btn.addEventListener(
             "click",
             evt => {
-                debugger
+               
                 const dialogSiblingSelector = `#${evt.target.id}+dialog`
                 const theDialog = document.querySelector(dialogSiblingSelector)
                 theDialog.showModal()
