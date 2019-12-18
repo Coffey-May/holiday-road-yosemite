@@ -14,14 +14,7 @@ import WeatherList from "./weather/WeatherList.js"
 import initializeEateryDetailButtonEvents from "./eateries/eateriesDialogs.js";
 import initializeParkDetailButtonEvents from "./parks/parkDialog.js";
 import initializeAttractionDetailButtonEvents from "./attractions/AttractionDialogs.js"
-
-
-
-
-
-          
-
-
+import StateSelect from "./parks/parkStateSelect.js";
 
 
 
@@ -54,14 +47,13 @@ getEateries()
     () => eaterySelect()
 ).then(
     () => EateryList()
+).then(
+    () => initializeEateryDetailButtonEvents()
 )
 
+StateSelect()
+ParkList()
+initializeParkDetailButtonEvents()
 
 
-getParks().then(
-    () => parkSelect()
-    ).then(
-     () => ParkList()
-    ).then(
-    () => initializeParkDetailButtonEvents()
-    )
+
