@@ -83,6 +83,9 @@ export const WeatherFilter = () => {
         if (dayOfTheWeek === 6) {
             forecastDays[`date${i}`].day = "Saturday"
         }
+        if (i === 0) {
+            forecastDays[`date${i}`].day = "Today"
+        }
         debugger
         forecastDays[`date${i}`].low = day_temp_mins.slice(0, 1).join("")
         // debugger
