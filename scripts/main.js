@@ -35,6 +35,8 @@ getAttractions ()
     
 )
 
+
+
 getWeather()
 .then(
     () => WeatherFilter()
