@@ -8,9 +8,10 @@ import attractionSelect from "./attractions/AttractionSelect.js";
 import EateryList from "./eateries/EateriesList.js";
 import ParkList from "./parks/ParkList.js";
 import attractionList from "./attractions/AttractionList.js";
+import initializeParkDetailButtonEvents from "./parks/parkDialog.js";
 
 
-          
+
 
 
 
@@ -42,4 +43,6 @@ getParks().then(
     () => parkSelect()
     ).then(
      () => ParkList()
+    ).then(
+    () => initializeParkDetailButtonEvents()
     )
