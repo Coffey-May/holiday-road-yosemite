@@ -27,3 +27,7 @@ h3{
     width:30vw;
 }
 
+.parkImg img {
+    width: 200px;
+    height: 200px;
+}
