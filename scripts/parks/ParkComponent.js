@@ -7,7 +7,7 @@ const ParkComponent = (park) => {
             <br>
         <div class="parkInformation">
             <div class="parkImg">
-                <img src="${park.images[0]}" alt="picture of ${park.name}">
+                <img src="${park.images.url}" alt="picture of ${park.name}">
             </div>
         </div>
         <div class="parkDialogButton">
