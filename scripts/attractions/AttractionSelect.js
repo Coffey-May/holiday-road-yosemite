@@ -24,11 +24,11 @@ const render = (attractionCollection) => {
     contentTarget.innerHTML =`
    
     <h4>Attraction</h4>
-    <select name="" id="" class="selectAttraction">Attractions
+    <select name="" id="attractionSelect" class="selectAttraction">Attractions
         <option value="0">Select Attraction</option>
         ${
             attractions.map(attraction =>
-            `<option value=${attraction.name.split(" ").join("_")}> ${attraction.name}</option>`
+            `<option> ${attraction.name}</option>`
             )
             }
             </select>
