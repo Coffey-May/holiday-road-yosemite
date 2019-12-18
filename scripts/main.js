@@ -11,6 +11,7 @@ import EateryList from "./eateries/EateriesList.js"
 import ParkList from "./parks/ParkList.js";
 import attractionList from "./attractions/AttractionList.js";
 import WeatherList from "./weather/WeatherList.js"
+import initializeEateryDetailButtonEvents from "./eateries/eateriesDialogs.js";
 import initializeParkDetailButtonEvents from "./parks/parkDialog.js";
 import initializeAttractionDetailButtonEvents from "./attractions/AttractionDialogs.js"
 
@@ -51,7 +52,7 @@ getEateries()
     () => eaterySelect()
 ).then(
     () => EateryList()
-)   
+)
 
 
 
