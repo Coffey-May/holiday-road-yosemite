@@ -9,7 +9,7 @@ import { getWeather } from "./weather/WeatherProvider.js";
 import { WeatherFilter } from "./weather/WeatherList.js";
 import EateryList from "./eateries/EateriesList.js"
 import ParkList from "./parks/ParkList.js";
-
+import attractionList from "./attractions/AttractionList.js";
 
 
           
@@ -21,6 +21,8 @@ import ParkList from "./parks/ParkList.js";
 getAttractions ()
 .then(
     () => attractionSelect()
+).then(
+    ()=> attractionList()
 )
 
 getWeather()
