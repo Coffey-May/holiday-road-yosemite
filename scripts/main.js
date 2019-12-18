@@ -10,12 +10,9 @@ import { WeatherFilter } from "./weather/WeatherFilter.js";
 import EateryList from "./eateries/EateriesList.js"
 import ParkList from "./parks/ParkList.js";
 import attractionList from "./attractions/AttractionList.js";
-<<<<<<< HEAD
 import WeatherList from "./weather/WeatherList.js"
-=======
 import initializeParkDetailButtonEvents from "./parks/parkDialog.js";
 
->>>>>>> master
 
 
 
