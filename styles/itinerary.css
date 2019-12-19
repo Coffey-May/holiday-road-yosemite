@@ -11,7 +11,8 @@ h3{
     flex-direction: row;
     border:1px solid black;
     width:70vw;
-    height:80vh;
+    height:60vh;
+   
 }
 .selectedItinerary{
     border:1px solid black;
@@ -27,6 +28,10 @@ h3{
 
 .savedItinerariesContainer{
     width:30vw;
+}
+
+.selectedPark, .selectedAttraction, .selectedEatery{
+    width:33vw;
 }
 
 .parkImg img {

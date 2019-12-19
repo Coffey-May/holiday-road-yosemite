@@ -6,6 +6,8 @@ import { useEateries } from './EateryProvider.js'
 const eventHub = document.querySelector('.container')
 const contentTarget = document.querySelector('.eateriesFilter')
 
+
+
 // 
 const eaterySelect = () => {
     const eateries = useEateries()
