@@ -26,16 +26,18 @@ const saveNewItinerary = () => {
                 "SavedItinerary": savedItineraryName
 
             }
-            saveItinerary(newItinerary)
+            saveItinerary(newItinerary).then(() => {
+                const message =new CustomEvent("showItineraryButtonClicked")
+                eventHub.dispatchEvent(message)
+
+            })
         }
 
     })
-eventHub.addEventListener('click', clickEvent => {
-    if (clickEvent.target.classList.contains === "showItineraryList") {
-        const message =new CustomEvent(showItineraryButtonClicked)
-        eventHub.dispatchEvent(message)
-    }
-})
+// eventHub.addEventListener('click', clickEvent => {
+//     if (clickEvent.target.id === "save--itinerary__Btn") {
+//     }
+// })
 
 }
 

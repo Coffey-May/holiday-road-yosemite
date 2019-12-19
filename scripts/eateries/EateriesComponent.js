@@ -4,6 +4,8 @@ const EateryComponent = (eatery) => {
     return `
     <section class="eatery-card">
     <header class="eateryFullName">${eatery.businessName}</header>
+    <br>
+    <img src="https://media.nbcdfw.com/2019/09/Dairy-Queen-generico.jpg?resize=850%2C478" alt="">
   <br>
   <div class ="eateryInformation">
   <button id="eatery--${eatery.id}">Eatery Details</button>
