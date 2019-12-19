@@ -1,4 +1,5 @@
 const WeatherComponent = (forecast) => {
+    var iconurl = "http://openweathermap.org/img/w/" + forecast.icon + ".png"
     
     return `
         <section class="weather_component">
@@ -13,6 +14,10 @@ const WeatherComponent = (forecast) => {
                 </span>
                 <span class="weather__data_high">
                     ${forecast.high}
+                </span>
+                <img src="${iconurl}">
+                <span class="weather__data_conditions">
+                    ${forecast.conditions}
                 </span>
         </section>
     `
