@@ -1,107 +1,39 @@
 {
   "itineraries": [
     {
-      "ParkName": "Trail Of Tears",
-      "AttractionName": "Owney the Stuffed Dog Postal Mascot",
-      "EateryName": "McClard's BBQ",
-      "SavedItinerary": "dasdasd",
+      "ParkName": "Appalachian",
+      "AttractionName": "Fountain of Youth",
+      "EateryName": "Louis' Lunch",
+      "SavedItinerary": "mo's stuuuuffffff",
       "id": 1
     },
     {
-      "ParkName": "Trail Of Tears",
-      "AttractionName": "Owney the Stuffed Dog Postal Mascot",
-      "EateryName": "McClard's BBQ",
-      "SavedItinerary": "dasdasd",
+      "ParkName": "Appalachian",
+      "AttractionName": "World’s Largest ‘Gone With the Wind’ Collection",
+      "EateryName": "St. Elmo Steak House",
+      "SavedItinerary": "this time",
       "id": 2
     },
     {
-      "ParkName": "Trail Of Tears",
-      "AttractionName": "Owney the Stuffed Dog Postal Mascot",
-      "EateryName": "McClard's BBQ",
-      "SavedItinerary": "dasdasd",
+      "ParkName": "North Country",
+      "AttractionName": "Mini Statue of Liberty",
+      "EateryName": "Deer Park Tavern",
+      "SavedItinerary": "yo",
       "id": 3
     },
     {
-      "ParkName": "Washington-Rochambeau Revolutionary Route",
-      "AttractionName": "Giant Abraham Lincoln",
-      "EateryName": "Louis' Lunch",
-      "SavedItinerary": "jhbvjh",
+      "ParkName": "Appalachian",
+      "AttractionName": "Teacher’s Hall of Fame",
+      "EateryName": "Union Oyster House",
+      "SavedItinerary": "fffffff",
       "id": 4
     },
     {
-      "ParkName": "Russell Cave",
-      "AttractionName": "Elvis Memorial Chapel",
-      "EateryName": "Club Paris",
-      "SavedItinerary": "kdfsdfnjsd",
+      "ParkName": "North Country",
+      "AttractionName": "World’s Largest Paul Bunyan",
+      "EateryName": "St. Elmo Steak House",
+      "SavedItinerary": "this is the one",
       "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
-    },
-    {
-      "ParkName": "Hot Springs",
-      "AttractionName": "Largest Fork in the US",
-      "EateryName": "The Old Clam House",
-      "SavedItinerary": "asdsad",
-      "id": 9
-    },
-    {
-      "id": 10
-    },
-    {
-      "id": 11
-    },
-    {
-      "id": 12
-    },
-    {
-      "ParkName": "Belmont-Paul Women's Equality",
-      "AttractionName": "Owney the Stuffed Dog Postal Mascot",
-      "EateryName": "The Old Clam House",
-      "SavedItinerary": "asddasd",
-      "id": 13
-    },
-    {
-      "ParkName": "Belmont-Paul Women's Equality",
-      "AttractionName": "Owney the Stuffed Dog Postal Mascot",
-      "EateryName": "The Old Clam House",
-      "SavedItinerary": "asddasd",
-      "id": 14
-    },
-    {
-      "ParkName": "War In The Pacific",
-      "AttractionName": "World’s Largest ‘Gone With the Wind’ Collection",
-      "EateryName": "Louis' Lunch",
-      "SavedItinerary": "asjrnejre",
-      "id": 15
-    },
-    {
-      "id": 16
-    },
-    {
-      "ParkName": "First State",
-      "AttractionName": "Fountain of Youth",
-      "EateryName": "El Charro Cafe",
-      "SavedItinerary": "hdhdh",
-      "id": 17
-    },
-    {
-      "id": 18
-    },
-    {
-      "id": 19
-    },
-    {
-      "id": 20
-    },
-    {
-      "id": 21
     }
   ]
 }

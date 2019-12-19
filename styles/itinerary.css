@@ -2,6 +2,12 @@ h3{
     color: rgb(255, 255, 255);
 }
 
+img {
+    width: 300px;
+    height: 200px;
+}
+
+
 .itineraryPreview {
     border:1px solid black;
 }
@@ -32,16 +38,5 @@ h3{
 
 .selectedPark, .selectedAttraction, .selectedEatery{
     width:33vw;
+
 }
-
-.parkImg img {
-    width: 200px;
-    height: 200px;
-}
-
-.attractionImg img {
-    width: 200px;
-    height: 200px;
-}
-
-
