@@ -7,9 +7,9 @@ const eventHub = document.querySelector(".container")
 
 const WeatherList = () => {
     // Load the application state to be used by this component
-    const appStateParks = useParks()
 
     eventHub.addEventListener('parkSelected', event => {
+        const appStateParks = useParks()
         const parkName = event.detail.park
         const filteredPark = appStateParks.find(
             (matchingPark) => {
@@ -39,7 +39,8 @@ const WeatherList = () => {
             WeatherFilter()
             const filteredForcasts = useWeatherFiltered()
             render(filteredForcasts)
-        })
+            console.log('something')
+        }).catch((error) => console.log("error"))
     
         
 
@@ -47,4 +48,4 @@ const WeatherList = () => {
 }
 
 
-export default WeatherList()
+export default WeatherList

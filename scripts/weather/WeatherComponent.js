@@ -16,6 +16,9 @@ const WeatherComponent = (forecast) => {
                     ${forecast.high}
                 </span>
                 <img src="${iconurl}">
+                <span class="weather__data_conditions">
+                    ${forecast.conditions}
+                </span>
         </section>
     `
 }
