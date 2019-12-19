@@ -6,7 +6,7 @@ const EateryComponent = (eatery) => {
     <header class="eateryFullName">${eatery.businessName}</header>
   <br>
   <div class ="eateryInformation">
-  <button id="eatery--${eatery.id}">Details</button>
+  <button id="eatery--${eatery.id}">Eatery Details</button>
   <dialog class="dialog--eatery" id="details--${eatery.id}">
   <ul>
   <li>DESCRIPTION:${eatery.description}</li>

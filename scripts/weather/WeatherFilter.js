@@ -7,7 +7,7 @@ export const useWeatherFiltered = () => {
     for (const date of Object.values(forecastDays)) {
         justTheDates.push(date)
     }
-    console.log(justTheDates)
+ 
     return justTheDates
 }
 
@@ -38,7 +38,7 @@ export const WeatherFilter = () => {
             day_condiitons.push(forecast.weather[0].main)
         }
 
-    console.log(day_condiitons)
+    
     day_temp_mins.sort((a, b) => (a - b))
 
     day_temp_maxs.sort((a, b) => (b - a))
@@ -72,10 +72,10 @@ export const WeatherFilter = () => {
 
     forecastDays[`date${i}`].high = day_temp_maxs.slice(0, 1).join("")
 
-    console.log(forecastDays)
+    
 
     forecastDays[`date${i}`].low = day_temp_mins.slice(0, 1).join("")
     forecastDays[`date${i}`].high = day_temp_maxs.slice(0, 1).join("")
-    console.log(forecastDays)
+    
 }
 }
