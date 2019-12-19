@@ -6,6 +6,9 @@
     border:1px solid black;
     background-color: rgba(1, 4, 2, 0.6);
 }
+
+   
+
 .parkFilter, .attractionsFilter, .eateriesFilter{
     border:1px solid black;
     background-color: rgb(2, 8, 0);
