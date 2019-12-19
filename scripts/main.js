@@ -16,7 +16,6 @@ import initializeParkDetailButtonEvents from "./parks/parkDialog.js";
 import initializeAttractionDetailButtonEvents from "./attractions/AttractionDialogs.js"
 import StateSelect from "./parks/parkStateSelect.js";
 import saveNewItinerary from "./savedItineraries.js/itineraryBuilder.js";
-import { saveItinerary } from "./savedItineraries.js/itinerariesProvider.js";
 import itineraryListComponent from "./savedItineraries.js/ItineraryListComponent.js";
 
 
@@ -59,7 +58,6 @@ StateSelect()
 ParkList()
 initializeParkDetailButtonEvents()
 saveNewItinerary()
-saveItinerary() 
 itineraryListComponent()
 
 
