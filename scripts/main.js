@@ -36,7 +36,6 @@ getWeather()
     () => WeatherList()
 )
 
-
 // FUNCTION CALLS AND THEIR PRIORITIES ARE LISTED HERE
 
 
