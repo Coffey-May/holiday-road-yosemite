@@ -11,14 +11,16 @@ const ParkComponent = (park) => {
             </div>
         </div>
         <div class="parkDialogButton">
-            <button class="parkDialogButton" id="park--${park.parkCode}">Additional Park Details</button>
+            <button class="parkDialogButton" id="park--${park.parkCode}">Park Details</button>
             <dialog class="dialog--button" id="details--${park.parkCode}">
-                <div>More Details</div>
-                        <div>Description: ${park.description}</div>
-                        <div>Direction: ${park.directions}</div>
-                        <div>Additional Images:</div>
-                        <img src="${park.images.map(image => {return image.url}).join(" ")}" alt="picture of ${park.name}">
-                <button class="button--close">Close Details</button>
+                <div>${park.name}</div>
+                        <br>
+                        <div>Description: <br>${park.description}</div>
+                        <br>
+                        <div>Directions: <br>${park.directionsInfo}</div>
+                        <br>
+                        <a href="${park.directionsUrl}">Click for Directions</a>
+                <br><button class="button--close">Close Details</button>
             </dialog>
         </div>
         </section>
