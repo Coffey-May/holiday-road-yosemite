@@ -15,6 +15,11 @@ import initializeEateryDetailButtonEvents from "./eateries/eateriesDialogs.js";
 import initializeParkDetailButtonEvents from "./parks/parkDialog.js";
 import initializeAttractionDetailButtonEvents from "./attractions/AttractionDialogs.js"
 import StateSelect from "./parks/parkStateSelect.js";
+import saveNewItinerary from "./savedItineraries.js/itineraryBuilder.js";
+import { saveItinerary } from "./savedItineraries.js/itinerariesProvider.js";
+import itineraryListComponent from "./savedItineraries.js/ItineraryListComponent.js";
+
+
 
 
 
@@ -28,6 +33,7 @@ getAttractions ()
     
 )
 
+<<<<<<< HEAD
 // getWeather()
 // .then(
 //     () => WeatherFilter()
@@ -35,7 +41,17 @@ getAttractions ()
 // // .then(
 // //     () => WeatherList()
 // // )
+=======
 
+
+getWeather()
+.then(
+    () => WeatherFilter()
+)
+.then(
+    () => WeatherList()
+)
+>>>>>>> master
 
 // FUNCTION CALLS AND THEIR PRIORITIES ARE LISTED HERE
 
@@ -55,6 +71,9 @@ ParkList()
     () => WeatherList()
 )
 initializeParkDetailButtonEvents()
+saveNewItinerary()
+saveItinerary() 
+itineraryListComponent()
 
 
 

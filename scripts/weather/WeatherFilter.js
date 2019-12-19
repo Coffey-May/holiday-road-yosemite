@@ -1,4 +1,4 @@
-import {useWeather} from "./WeatherProvider.js"
+import { useWeather } from "./WeatherProvider.js"
 
 let forecastDays = {}
 
@@ -7,7 +7,7 @@ export const useWeatherFiltered = () => {
     for (const date of Object.values(forecastDays)) {
         justTheDates.push(date)
     }
-    console.log(justTheDates)
+ 
     return justTheDates
 }
 
@@ -388,6 +388,5 @@ export const WeatherFilter = () => {
         // So I'm saving the icon in the day data object
         // in a property called icon
 
-        console.log(forecastDays)
     }
 }
