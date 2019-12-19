@@ -27,7 +27,7 @@ h3{
 }
 
 .savedItinerariesContainer{
-    width:30vw;
+    width: 30vw;
 }
 
 .selectedPark, .selectedAttraction, .selectedEatery{
@@ -35,6 +35,11 @@ h3{
 }
 
 .parkImg img {
+    width: 200px;
+    height: 200px;
+}
+
+.attractionImg img {
     width: 200px;
     height: 200px;
 }
