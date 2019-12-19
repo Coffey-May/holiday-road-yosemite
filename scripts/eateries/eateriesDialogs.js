@@ -11,7 +11,6 @@ const initializeEateryDetailButtonEvents = () => {
         )
     }
     const allDialogButtons = document.querySelectorAll("button[id^='eatery--']")
-    console.log(allDialogButtons)
     for (const btn of allDialogButtons) {
         btn.addEventListener(
             "click",

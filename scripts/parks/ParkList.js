@@ -31,6 +31,8 @@ const ParkList = () => {
             }
         )
         render(filteredParks)
+
+        
     })
 
     const render = (parkCollection) => {
