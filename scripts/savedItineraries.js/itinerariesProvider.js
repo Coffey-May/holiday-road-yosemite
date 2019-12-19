@@ -16,9 +16,10 @@ export const getItinerary = () => {
     return fetch('http://localhost:3000/itineraries')
       .then(response => response.json())
       .then(itineraryArray => {
-          itineraries =itineraryArray.slice()
+          itineraries = itineraryArray.slice()
       }) 
     }
+    
 
 
     export const useItineraries = () => {
