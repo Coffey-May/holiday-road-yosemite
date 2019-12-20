@@ -13,6 +13,7 @@ import initializeAttractionDetailButtonEvents from "./attractions/AttractionDial
 import StateSelect from "./parks/parkStateSelect.js";
 import saveNewItinerary from "./savedItineraries.js/itineraryBuilder.js";
 import itineraryListComponent from "./savedItineraries.js/ItineraryListComponent.js";
+import parkSelect from "./parks/ParkSelect.js";
 
 
 
@@ -38,7 +39,7 @@ getEateries()
 ).then(
     () => initializeEateryDetailButtonEvents()
 )
-
+parkSelect()
 StateSelect()
 ParkList()
 WeatherList()

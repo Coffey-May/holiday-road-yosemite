@@ -15,8 +15,8 @@
 
     <!-- NAV BAR -->
 
-    <nav class="navBar"><img class="navPic"
-            src="https://library.kissclipart.com/20180927/ree/kissclipart-u-s-national-park-service-clipart-national-park-s-336852f989d579e1.png">
+    <nav class="navBar">
+        <div></div>
         <h1>TRIP PLANNER</h1>
     </nav>
 
@@ -33,6 +33,8 @@
 
         <div class="eateriesFilter"></div>
     </section>
+    <hr class="filterDivider">
+
 
     <!-- BEGINNING OF MAIN CONTENT -->
     <main class="mainContent">
@@ -50,8 +52,6 @@
 
                 <div class="selectedAttraction">
                     <h3>SELECTED ATTRACTION</h3>
-                    <div id="rating">
-                    </div>
                 </div>
 
                 <div class="selectedEatery">
@@ -60,6 +60,8 @@
                     <!-- WEATHER CONTAINER -->
             </section>
 
+            <div class="horizontalLine"></div>
+
 
             <!-- ASIDE -->
             <aside class="savedItinerariesContainer">
@@ -67,11 +69,14 @@
                 <div class="itinerary--card"></div>
             </aside>
         </article>
-        <div>
-            <h4>My Itinerary Name</h4>
+        <div class="itineraryButtonField">
+            <h4 class="myItineraryName">My Itinerary Name</h4>
             <input type="text" class="txtArea" id="txtAreaId"></input>
             <button class="saveBtn" id="save--itinerary__Btn">SAVE ITINERARY</button>
         </div>
+        <br>
+        <hr class="weatherDivider">
+        <br>
 
         <section class="weatherContainer">
             <div class="selectedItineraryWeather">

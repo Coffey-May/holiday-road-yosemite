@@ -3,21 +3,39 @@
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border:1px solid black;
-    background-color: rgba(1, 4, 2, 0.6);
+    margin: 10px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+
 }
 
    
 
 .parkFilter, .attractionsFilter, .eateriesFilter{
-    border:1px solid black;
-    background-color: rgb(2, 8, 0);
-    color:rgb(255, 255, 255);
+    color:rgb(23, 23, 61);
     border-radius:25%;
-    text-align:center;
+    
 }
 h4{
+    font-weight: lighter;
+    color:black;
     margin:0;
-    border-radius:25;
+    text-transform: uppercase;
 }
 
+.selectIcon img {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px;
+}
+.selectIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.filterDivider {
+    border-top: 2px solid lightgray;
+}

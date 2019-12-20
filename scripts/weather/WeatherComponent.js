@@ -3,6 +3,7 @@ const WeatherComponent = (forecast) => {
     
     return `
         <section class="weather_component">
+            <div "weather--card">
             <h3 class="weather__date">
                 ${forecast.day}
                 <br>
@@ -15,10 +16,11 @@ const WeatherComponent = (forecast) => {
                 <span class="weather__data_high">
                     ${forecast.high}
                 </span>
-                <img src="${iconurl}">
+                <img class="weatherImage" src="${iconurl}">
                 <span class="weather__data_conditions">
                     ${forecast.conditions}
                 </span>
+            </div>
         </section>
     `
 }
