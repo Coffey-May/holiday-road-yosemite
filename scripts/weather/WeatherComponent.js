@@ -5,16 +5,16 @@ const WeatherComponent = (forecast) => {
         <section class="weather_component">
             <div "weather--card">
             <h3 class="weather__date">
-                ${forecast.day}
+                ${forecast.dayweek}
                 <br>
-                ${forecast.dayMonth}
+                ${forecast.monthAndDay}
             </h3>
             <div class="weather__data">
-                <span class="weather__data_low">
-                    ${forecast.low}
-                </span>
                 <span class="weather__data_high">
-                    ${forecast.high}
+                    ${forecast.high}°
+                </span>
+                <span class="weather__data_low">
+                    ${forecast.low}°
                 </span>
                 <img class="weatherImage" src="${iconurl}">
                 <span class="weather__data_conditions">

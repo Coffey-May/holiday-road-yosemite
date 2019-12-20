@@ -64,8 +64,6 @@ export const getParks = (selectedState) => {
         )
         .then(
             parsedParks => {
-
-                console.table(parsedParks)
                 parks = parsedParks.data.slice()
                     .sort(function (a, b) {
                         var nameA = a.states.toUpperCase(); // ignore upper and lowercase
