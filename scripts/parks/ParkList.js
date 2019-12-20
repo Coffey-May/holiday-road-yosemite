@@ -6,7 +6,6 @@ const eventHub = document.querySelector(".container")
 
 
 eventHub.addEventListener("stateSelected", event => {
-    console.log(event.detail.state)
     getParks(event.detail.state).then(parkSelect)
 })
 

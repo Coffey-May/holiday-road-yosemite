@@ -39,7 +39,6 @@ const WeatherList = () => {
             WeatherFilter()
             const filteredForcasts = useWeatherFiltered()
             render(filteredForcasts)
-            console.log('something')
         }).catch((error) => console.log("error"))
     
         
