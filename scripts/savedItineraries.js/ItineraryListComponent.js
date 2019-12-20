@@ -31,6 +31,9 @@ const itineraryListComponent = () => {
    <div>Park: ${itineraries.ParkName}</div>
    <div>Attraction: ${itineraries.AttractionName}</div>
    <div>Eatery: ${itineraries.EateryName}</div>
+   <div class="rating">
+    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
    </div>
    `
         }).join(" ")

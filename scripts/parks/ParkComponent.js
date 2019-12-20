@@ -11,6 +11,14 @@ const ParkComponent = (park) => {
             </div>
         </div>
         <div class="parkDialogButton">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <br>
             <button class="parkDialogButton" id="park--${park.parkCode}">Park Details</button>
             <dialog class="dialog--button" id="details--${park.parkCode}">
                 <div>${park.name}</div>

@@ -11,6 +11,14 @@ const attractionComponent = (attraction) => {
     <div class ="attractionInformation">
    </div>
    <div class="attractionDialogButton">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    <br>
             <button class="attractionDialogButton" id="attraction--${attraction.id}">Additional Details</button>
             <dialog class="dialog--button" id="details--${attraction.id}">
                 
