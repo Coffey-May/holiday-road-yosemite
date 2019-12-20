@@ -19,6 +19,18 @@ const itineraryListComponent = () => {
         )
     })
 
+    eventHub.addEventListener('click', event => {
+        if(event.target.id === 'show--Itinerary'){
+            getItinerary().then(
+                () => {
+                    const allTheItineraries = useItineraries()
+                    render(allTheItineraries)
+        })
+    }
+}
+
+    )
+
 
 
 
@@ -41,7 +53,7 @@ const itineraryListComponent = () => {
         console.log(htmlString)
 
 
-        contentElement.innerHTML += htmlString
+        contentElement.innerHTML = htmlString
     }
     // render(itinerary)
 }
