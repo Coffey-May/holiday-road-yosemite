@@ -26,10 +26,12 @@ const itineraryListComponent = () => {
         console.log(itineraryCollection, "this is the itinerary collection")
         let htmlString = itineraryCollection.map((itineraries) => {
              
-           return ` <h4>${itineraries.SavedItinerary}</h4>  
-   <div>${itineraries.ParkName}</div>
-   <div>${itineraries.AttractionName}</div>
-   <div>${itineraries.EateryName}</div>
+           return ` <div class="individual--card"><h4 class="savedName">${itineraries.SavedItinerary}</h4>
+           <hr> 
+   <div>Park: ${itineraries.ParkName}</div>
+   <div>Attraction: ${itineraries.AttractionName}</div>
+   <div>Eatery: ${itineraries.EateryName}</div>
+   </div>
    `
         }).join(" ")
 

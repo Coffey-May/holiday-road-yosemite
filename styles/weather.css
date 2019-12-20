@@ -1,34 +1,55 @@
 .selectedItineraryWeather{
-    border:1px solid black;
+    margin-top: 10px;
+    background-color: rgb(238, 238, 238);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 375px;
 
 }
 
+.weather--card {
+    height: 200px;
+    align-items: center;
+}
+
+.weatherImage {
+    height: 100px;
+    width: 100px;
+}
+
 .weather_component {
+    font-weight: lighter;
+    line-height: 4rem;
     display: flex;
     flex-direction: column;
-    border: 3px solid lightskyblue;
     margin: 5px;
     padding:5px;
-    width:17.5%;
-    padding-bottom: 25px;
+    width: 17.5%;
+    background-color: white;
 }
 
 .weather__data {
     display: flex;
     flex-direction: column;
+    flex-basis: 15%;
+    align-items: center;
 }
 
 .weather__date {
     text-align: center;
+    color: white;
+    background-color: rgb(66, 66, 102);
+    margin: 0px;
+    line-height: normal;
 }
 
 .weather__data_low {
     text-align: center;
+    color: black;
 }
 
 .weather__data_high {
-    text-align: center
+    text-align: center;
+    color: black;
 }

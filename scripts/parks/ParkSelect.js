@@ -25,7 +25,8 @@ const parkSelect = () => {
 const render = (parkCollection) => {
     contentTarget.innerHTML =`
    
-        <h4>PARKS</h4>
+    <div class="selectIcon">
+    <img src="spinach.png" alt="park icon">
         <select name="select" id="parkSelect" class="selectPark">Parks
         <option value="0">Select Park</option>
         ${
@@ -34,6 +35,7 @@ const render = (parkCollection) => {
             )
             }
             </select>
+    </div>
         
     `
 }

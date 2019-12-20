@@ -8,9 +8,14 @@
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    background-image:url('https://images-na.ssl-images-amazon.com/images/I/81SjlJlu83L._SL1500_.jpg');
+    /* background-image:url('https://images-na.ssl-images-amazon.com/images/I/81SjlJlu83L._SL1500_.jpg'); */
     background-size: no-repeat; 
     height:80vh;
+    background-color: rgb(238, 238, 238)
    
+
+}
+
+.mainContent {
 
 }

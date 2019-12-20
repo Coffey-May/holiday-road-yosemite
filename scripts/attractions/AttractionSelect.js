@@ -23,7 +23,8 @@ const attractionSelect = () => {
 const render = (attractionCollection) => {
     contentTarget.innerHTML =`
    
-    <h4>Attraction</h4>
+    <div class="selectIcon">
+    <img src="film-camera.png" alt="attraction icon">
     <select name="" id="attractionSelect" class="selectAttraction">Attractions
         <option value="0">Select Attraction</option>
         ${
@@ -32,6 +33,7 @@ const render = (attractionCollection) => {
             )
             }
             </select>
+    </div>
         
     `
 }

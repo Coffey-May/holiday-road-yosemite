@@ -28,7 +28,8 @@ eventHub.addEventListener("change", changeEvent => {
 
 const render = statesCollection => {
     contentElement.innerHTML += `
-    <h4>State</h4>
+    <div class="selectIcon">
+    <img src="earth.png" alt="state icon">
         <select id="stateSelect" class="selectState">State
         <option value="0">Select State</option>
         ${
@@ -37,6 +38,7 @@ const render = statesCollection => {
             )
             }
             </select>
+    </div>
     `
 }
 render(states)
