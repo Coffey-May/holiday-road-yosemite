@@ -30,6 +30,7 @@
 }
 
 .weather__data {
+    font-size: 25px;
     display: flex;
     flex-direction: column;
     flex-basis: 15%;
@@ -45,11 +46,13 @@
 }
 
 .weather__data_low {
+    font-size: 25px;
     text-align: center;
     color: black;
 }
 
 .weather__data_high {
+    font-size: 25px;
     text-align: center;
     color: black;
 }
