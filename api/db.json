@@ -1,39 +1,5 @@
 {
   "itineraries": [
-    {
-      "ParkName": "Appalachian",
-      "AttractionName": "Fountain of Youth",
-      "EateryName": "Louis' Lunch",
-      "SavedItinerary": "mo's stuuuuffffff",
-      "id": 1
-    },
-    {
-      "ParkName": "Appalachian",
-      "AttractionName": "World’s Largest ‘Gone With the Wind’ Collection",
-      "EateryName": "St. Elmo Steak House",
-      "SavedItinerary": "this time",
-      "id": 2
-    },
-    {
-      "ParkName": "North Country",
-      "AttractionName": "Mini Statue of Liberty",
-      "EateryName": "Deer Park Tavern",
-      "SavedItinerary": "yo",
-      "id": 3
-    },
-    {
-      "ParkName": "Appalachian",
-      "AttractionName": "Teacher’s Hall of Fame",
-      "EateryName": "Union Oyster House",
-      "SavedItinerary": "fffffff",
-      "id": 4
-    },
-    {
-      "ParkName": "North Country",
-      "AttractionName": "World’s Largest Paul Bunyan",
-      "EateryName": "St. Elmo Steak House",
-      "SavedItinerary": "this is the one",
-      "id": 5
-    }
+
   ]
 }

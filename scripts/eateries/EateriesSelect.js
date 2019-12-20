@@ -27,7 +27,9 @@ const eaterySelect = () => {
 const render = (eateryCollection) => {
     contentTarget.innerHTML =`
    
-    <h4>EATERIES</h4>
+    
+    <div class="selectIcon">
+    <img src="fork.png" alt="eatery icon">
     <select name="" id="eaterySelect" class="selectEatery">EATERIES
         <option value="0">Select Eatery</option>
         ${
@@ -36,6 +38,7 @@ const render = (eateryCollection) => {
             )
             }
             </select>
+    </div>
         
     `
 }

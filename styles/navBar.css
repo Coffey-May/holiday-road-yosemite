@@ -1,25 +1,33 @@
 h1{
     font-weight: lighter;
     line-height: 4rem;
-    margin:0 auto;
-    padding-right:100px;
-    color:white;
+    margin-top: 15px;
+    color: white;
+    font-size: 80px;
+    margin-left: 20px;
      /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18  */
 }
-.navPic{
-    height:70px;
-    width:130px;
+.navPic img{
+    height:80px;
+    width:170px;
+    background-color: white;
+}
+
+.navPic {
+    background-color: white;
 }
 
 .navBar{
-    border:1px solid black;
     text-align: center;
-    background-color: rgb(5, 0, 12, 0.5); 
-    /* background-image:url('https://img.pixers.pics/pho_wat(s3:700/FO/19/32/50/47/3/700_FO193250473_b6ed619572d9213555c874333e4396ae,700,224,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,174,jpg)/wall-murals-panorama-yosemite-national-park-im-gegenlicht.jpg.jpg'); */
+    background-image:url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/romantic-hot-tropical-night-panorama-view-james-bo-insogna.jpg');
     background-size: 100vw; 
     color: rgb(254, 247, 223);
+    background-color: ;
     letter-spacing: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
+    height: 300px;
+    object-fit: fill;
+
 }

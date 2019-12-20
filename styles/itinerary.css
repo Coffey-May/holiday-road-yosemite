@@ -1,28 +1,22 @@
 h3{
-    color: rgb(255, 255, 255);
+    font-weight: lighter;
+    line-height: 1rem;
+    color:black;
+    font-size: 30px;
+    color: rgb(23, 23, 61);
 }
 
 img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
 }
 
-
-.itineraryPreview {
-    border:1px solid black;
-}
 
 .itineraryContainer{
     display:flex;
     flex-direction: row;
-    border:1px solid black;
     width:70vw;
     height:60vh;
-   
-}
-.selectedItinerary{
-    border:1px solid black;
-    height:37vh;
 }
 
 
@@ -33,10 +27,89 @@ img {
 }
 
 .savedItinerariesContainer{
-    width:30vw;
+    width: 30vw;
 }
 
-.selectedPark, .selectedAttraction, .selectedEatery{
+.selectedItinerary, .selectedAttraction, .selectedEatery{
     width:33vw;
+    background-color: white;
+    margin: 25px 5px 5px 5px;
+    box-shadow: 0 20px 20px -20px #333;
 
+}
+
+.horizontalLine {
+    border: 1px solid lightgray;
+    margin: 25px 5px 5px 25px;
+}
+
+.itineraryButtonField {
+    align-items: center;
+    margin-top: 30px;
+    color: rgb(23, 23, 61);
+    font-size: 20px;
+    padding-right: 500px;
+}
+
+.parkFullName, .attractionFullName, .eateryFullName {
+    color: rgb(23, 23, 61);
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 4rem;
+    margin-top: 5px;
+    text-transform: uppercase;
+
+}
+
+.parkDialogButton {
+    text-align: center;
+    border: none;
+    background-color: rgb(66, 66, 102);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.attractionDialogButton{
+    text-align: center;
+    border: none;
+    background-color: rgb(66, 66, 102);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.eateryDialogButton {
+    text-align: center;
+    border: none;
+    background-color: rgb(66, 66, 102);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 3px;
+}
+
+.eateryInformation {
+    text-align: center;
+    border: none;
+    background-color: rgb(66, 66, 102);
+    color: white;
+    padding: 15px;
+
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 3px;
 }
